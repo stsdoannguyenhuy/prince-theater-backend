@@ -42,11 +42,11 @@ class HttpClient {
         if (isSuccess(response)) {
             return String(response.entity.content.readAllBytes(), StandardCharsets.UTF_8)
         }
-        throw UnknownError("Unknown error when get from at $url with ${response.statusLine}")
+        throw InternalError("Unknown error when get from at $url with ${response.statusLine}")
     }
 
     fun <T> get(url: String, headers: List<Header> = ArrayList(), clazz: Class<T>): T {
-        val stringResponse: String = get(url,headers)
+        val stringResponse: String = get(url, headers)
         return objectMapper.readValue(stringResponse, clazz)
     }
 

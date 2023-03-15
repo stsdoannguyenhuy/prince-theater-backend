@@ -30,7 +30,9 @@ dependencies {
     implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.14'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation "org.mockito.kotlin:mockito-kotlin:4.1.0"
-    testImplementation group: 'com.github.tomakehurst', name: 'wiremock', version: '2.27.2'
+    // https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock-jre8-standalone
+    testImplementation group: 'com.github.tomakehurst', name: 'wiremock-jre8-standalone', version: '2.35.0'
+
 }
 
 tasks.withType(KotlinCompile) {

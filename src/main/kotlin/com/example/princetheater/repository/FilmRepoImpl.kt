@@ -14,10 +14,12 @@ interface FilmRepository {
 }
 
 @Repository
-class FilmRepoImpl @Autowired constructor(private val httpClient: HttpClient) : FilmRepository {
-
+class FilmRepoImpl : FilmRepository {
     @Value("\${com.prince-theater.api-key}")
     private lateinit var apiKey: String
+
+    @Autowired
+    private lateinit var httpClient: HttpClient
 
     companion object {
         private val filmBaseUrl = "https://challenge.lexicondigital.com.au"
