@@ -13,7 +13,7 @@ After finishing preparing steps, come to the building & running steps
     * Open Intellij and select `File->Open` and navigate to the root directory of the project.
     * Then select the directory choose the `build.grale` in the cloned repo.
     * After that, click `OK` to open the project in Intellij. In this step, gradle will sync and download the needed library.
-    * Finally, after gradle sync successfully, Select `Run -> Run 'app'` from the menu or press `shift + f10` to run application.
+    * Finally, after gradle sync successfully, Select `Run -> Run 'PrinceTheaterApplication'` from the menu or press `shift + f10` to run application.
 * If run by docker (recommend)
     * Open `terminal` and navigate to the root directory of the project.
     * Run command `docker-compose up`. After running these steps, will see the image below
@@ -73,7 +73,8 @@ Call multiple times to [3rd api](https://challenge.lexicondigital.com.au/api/v2/
 - <span style="color:red">Bad Gateway 502 or Internal server error 500</span> sometimes occur. In this case, Prince Theatre application will try 3 times before responsing an error
 
 ### Unit test
-Please read the [test report](./documentation/test/index.html) here 
+Please read the [test report](./documentation/test/index.html) here
+![Test-image](./documentation/test-report.jpg)
 
 
 
