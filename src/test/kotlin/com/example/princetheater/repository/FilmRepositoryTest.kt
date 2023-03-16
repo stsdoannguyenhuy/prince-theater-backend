@@ -1,9 +1,8 @@
 package com.example.princetheater.repository
 
-import com.example.princetheater.config.general.HttpClient
+import com.example.princetheater.common.HttpClient
 import com.example.princetheater.model.FilmProvider
 import com.example.princetheater.model.FilmResponse
-import org.apache.http.message.BasicHeader
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito
